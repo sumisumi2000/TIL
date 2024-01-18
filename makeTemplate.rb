@@ -4,6 +4,7 @@ Year = 2024
 Month = 1
 # 月の日数を入力
 maxDay = 31
+BigDayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DayOfTheWeek = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 # 月の初めの曜日を入力、日曜日を0とする
 firstDayOfTheWeek = 1
@@ -16,13 +17,13 @@ end
 
 puts "# #{Year}/#{format("%02d", Month)}"
 puts
-puts "## 要約"
+puts "## 目標"
 puts "+ "
 puts
 puts "## 目次"
 
 for day in 1..maxDay do
-  puts " + [#{Year}/#{format("%02d", Month)}/#{format("%02d", day)}]" + "(##{Year}#{format("%02d", Month)}#{format("%02d", day)}#{DayOfTheWeek[day % 7]})"
+  puts " + [#{format("%02d", Month)}/#{format("%02d", day)}(#{BigDayOfTheWeek[day % 7]})]" + "(##{Year}#{format("%02d", Month)}#{format("%02d", day)}#{DayOfTheWeek[day % 7]})"
 end
 
 puts
@@ -30,5 +31,5 @@ puts "---"
 puts
 
 for day in 1..maxDay do
-  puts "### #{Year}/#{format("%02d", Month)}/#{format("%02d", day)}(#{DayOfTheWeek[day % 7]})"
+  puts "### #{Year}/#{format("%02d", Month)}/#{format("%02d", day)}(#{BigDayOfTheWeek[day % 7]})"
 end
