@@ -33,5 +33,5 @@ puts
 for day in 1..maxDay do
   puts "### #{Year}/#{format("%02d", Month)}/#{format("%02d", day)}(#{BigDayOfTheWeek[day % 7]})"
   puts "+ "
-  puts "###### 計分"
+  puts "###### 計分(時間分)"
 end
