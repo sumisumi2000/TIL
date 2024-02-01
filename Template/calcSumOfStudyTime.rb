@@ -4,7 +4,7 @@ Year = 2024
 Month = 1
 
 # mdファイルを一行ずつ読み込み
-lines = File.readlines("#{Year}/#{Year}_#{format("%02d", Month)}.md").grep(/計.*分/)
+lines = File.readlines("../#{Year}/#{Year}_#{format("%02d", Month)}.md").grep(/計.{1,4}分/)
 
 sumTime = 0
 
