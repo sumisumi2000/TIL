@@ -3,9 +3,9 @@
 # 年をここに入力
 Year = 2024
 # 月をここに入力
-Month = 2
+Month = 3
 # 月の日数を入力
-maxDay = 29
+maxDay = 31
 BigDayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DayOfTheWeek = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 # 月の初めの曜日を入力、日曜日を0とする
@@ -35,6 +35,7 @@ puts
 
 for day in 1..maxDay do
   puts "### #{Year}/#{format("%02d", Month)}/#{format("%02d", day)}(#{BigDayOfTheWeek[day % 7]})"
-  puts "+ "
+  puts "##### カリキュラム"
+  puts "##### その他"
   puts "###### 計分(時間分)"
 end
