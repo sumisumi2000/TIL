@@ -9,7 +9,7 @@ maxDay = 31
 BigDayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DayOfTheWeek = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 # 月の初めの曜日を入力、日曜日を0とする
-firstDayOfTheWeek = 4
+firstDayOfTheWeek = 5
 
 # 月の初めの曜日が2番目の要素になるように並び替え
 ((firstDayOfTheWeek + 6) % 7).times do
