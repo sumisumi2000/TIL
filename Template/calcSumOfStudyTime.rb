@@ -1,17 +1,17 @@
 #年をここに入力
 Year = 2024
 #月をここに入力
-Month = 2
+Month = 3
 
 # mdファイルを一行ずつ読み込み
-lines = File.readlines("#{Year}/#{Year}_#{format("%02d", Month)}.md").grep(/計.{1,4}分/)
+lines = File.readlines("#{Year}/#{Year}_#{format("%02d", Month)}.md").grep(/計.{1,5}分/)
 
 sumTime = 0
 
 # 合計時間を計算
 lines.each do |line|
   # 「計○○分」の行を抜き出して数字だけ抽出
-  sumTime += line.slice(/計\d{1,4}分/).delete("^0-9").to_i
+  sumTime += line.slice(/計\s\d{1,4}\s分/).delete("^0-9").to_i
 end
 
 # 合計時間を計○○分(○○時間○○分)と出力
