@@ -3,13 +3,13 @@
 # 年をここに入力
 Year = 2024
 # 月をここに入力
-Month = 4
+Month = 5
 # 月の日数を入力
-maxDay = 30
+maxDay = 31
 BigDayOfTheWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 DayOfTheWeek = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]
 # 月の初めの曜日を入力、日曜日を0とする
-firstDayOfTheWeek = 1
+firstDayOfTheWeek = 3
 
 # 月の初めの曜日が2番目の要素になるように並び替え
 ((firstDayOfTheWeek + 6) % 7).times do
