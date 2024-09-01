@@ -1,7 +1,7 @@
 #年をここに入力
 Year = 2024
 #月をここに入力
-Month = 7
+Month = 8
 
 # mdファイルを一行ずつ読み込み
 lines = File.readlines("#{Year}/#{Year}_#{format("%02d", Month)}.md").grep(/計.{1,5}分/)
